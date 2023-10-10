@@ -23,9 +23,29 @@
       top: -75%;
     }
   }
+
+  html.lenis {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
 }
 
-@layer utilities {
+/* @layer utilities {
   .sm-var-position {
     &:nth-of-type(1) {
       top: -215%;
@@ -40,4 +60,4 @@
       top: 15%;
     }
   }
-}
+} */

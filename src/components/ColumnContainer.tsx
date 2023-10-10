@@ -55,19 +55,19 @@ const ColumnContainer: React.FC = () => {
   // Create a reference for the columnContainer element
   const columnContainer = useRef(null);
   // Get the height value property from the dimension state
-  const { height } = useDimension();
-  // Get scrollYProgress using the useScroll hook on the columnContainer element
-  const { scrollYProgress } = useScroll({
-    target: columnContainer,
-    //Start tracking at the bottom of the window and top of the columnContainer and stop tracking at the top of the window and bottom of the columnContainer
-    offset: ["start end", "end start"],
-  });
+  // const { height } = useDimension();
+  // // Get scrollYProgress using the useScroll hook on the columnContainer element
+  // const { scrollYProgress } = useScroll({
+  //   target: columnContainer,
+  //   //Start tracking at the bottom of the window and top of the columnContainer and stop tracking at the top of the window and bottom of the columnContainer
+  //   offset: ["start end", "end start"],
+  // });
 
-  // Calculate transformations based on scrollYProgress and height
-  const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
-  const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
+  // // Calculate transformations based on scrollYProgress and height
+  // const y = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  // const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3]);
+  // const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
+  // const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -108,21 +108,21 @@ const ColumnContainer: React.FC = () => {
       className="bg-slate-950 h-[70vh] md:h-[175vh] relative flex gap-[2vw] p-[2vw] overflow-hidden"
     >
       <Column
-        y={y}
+        // y={y}
         images={[images[0], images[1], images[2], images[5], images[11]]}
       />
       <Column
-        y={y2}
+        // y={y2}
         images={[images[3], images[4], images[5], images[9], images[4]]}
       />
 
       <Column
-        y={y3}
+        // y={y3}
         images={[images[6], images[7], images[8], images[2], images[3]]}
       />
 
       <Column
-        y={y4}
+        // y={y4}
         images={[images[9], images[10], images[11], images[8], images[7]]}
       />
     </div>

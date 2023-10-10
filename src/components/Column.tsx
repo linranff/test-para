@@ -39,7 +39,7 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
           <div
             key={index}
             // hover:scale-105 transition-all duration-150 hover:border-8 hover:border-white/20
-            className="bg-white/10 w-full relative rounded-[1vw] overflow-hidden "
+            className="bg-white/10 w-full relative rounded-[1vw] overflow-hidden hover:scale-105 transition-all duration-150 hover:border-8 hover:border-white/20 "
           >
             <video
               src={image}

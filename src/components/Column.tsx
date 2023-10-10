@@ -1,6 +1,7 @@
 "use client";
 import { MotionValue, motion } from "framer-motion";
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 type ColumnProps = {
   images: string[];
@@ -43,12 +44,13 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
           >
             <video
               src={image}
-              preload="auto"
+              preload="none"
               autoPlay
               loop
               muted
               playsInline
               className="object-cover"
+              poster="https://d3phaj0sisr2ct.cloudfront.net/site/videos/gen2-hero-homepage-poster.webp"
               // alt="text-pic"
               // fill
               // quality={100}

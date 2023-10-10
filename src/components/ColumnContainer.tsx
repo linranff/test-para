@@ -6,19 +6,34 @@ import { Column } from "@/components";
 import useDimension from "@/hooks/useDimension";
 
 // Array of image URLs
-// const images2 = [
-//   "/images/1.jpg",
-//   "/images/2.jpg",
-//   "/images/3.jpg",
-//   "/images/4.jpg",
-//   "/images/5.jpg",
-//   "/images/6.jpg",
-//   "/images/7.jpg",
-//   "/images/8.jpg",
-//   "/images/9.jpg",
-//   "/images/10.jpg",
-//   "/images/11.jpg",
-//   "/images/12.jpg",
+const images2 = [
+  "/images/1.jpg",
+  "/images/2.jpg",
+  "/images/3.jpg",
+  "/images/4.jpg",
+  "/images/5.jpg",
+  "/images/6.jpg",
+  "/images/7.jpg",
+  "/images/8.jpg",
+  "/images/9.jpg",
+  "/images/10.jpg",
+  "/images/11.jpg",
+  "/images/12.jpg",
+];
+
+// const images = [
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
+//   "https://morph-generated-tag.s3.us-west-2.amazonaws.com/nowatermark_video_hd/-fps+30+%2C+best+quality%2C+extremely+detailed%2C+minima-65327a67a2384b3cbc2f4f931acb1c47.mp4",
 // ];
 
 const images = [

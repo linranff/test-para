@@ -6,8 +6,8 @@ const Divider: React.FC = () => {
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      transition={{ duration: 0.8 }}
-      className="h-px max-w-3xl bg-slate-300"
+      transition={{ duration: 1.5 }}
+      className="h-px max-w-4xl bg-slate-300"
     />
   );
 };

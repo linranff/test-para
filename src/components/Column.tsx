@@ -44,7 +44,7 @@ const Column: React.FC<ColumnProps> = ({ images, y }) => {
           >
             <video
               src={image}
-              preload="none"
+              preload="auto"
               autoPlay
               loop
               muted

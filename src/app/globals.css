@@ -23,7 +23,7 @@
       top: -75%;
     }
   }
-
+  /* 
   html.lenis {
     height: auto;
   }
@@ -42,7 +42,7 @@
 
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
-  }
+  } */
 }
 
 /* @layer utilities {

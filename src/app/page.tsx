@@ -1,7 +1,7 @@
-// "use client";
+"use client";
 import { Divider, Button, ColumnContainer } from "@/components";
 import Link from "next/link";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Test from "@/components/Test";
 
 const images = [
@@ -76,9 +76,9 @@ export default function Home() {
         {/* <Button /> */}
         <p className="text-sm mt-6 text-slate-400"></p>
       </div>
-      {/* <ColumnContainer /> */}
+      <ColumnContainer />
 
-      <div className="bg-slate-950 h-[70vh] md:h-[175vh] relative flex gap-[2vw] p-[2vw] overflow-hidden">
+      {/* <div className="bg-slate-950 h-[70vh] md:h-[175vh] relative flex gap-[2vw] p-[2vw] overflow-hidden">
         <Test
           y={1}
           images={[images[0], images[1], images[2], images[5], images[11]]}
@@ -97,7 +97,12 @@ export default function Home() {
           y={4}
           images={[images[9], images[10], images[11], images[8], images[7]]}
         />
-      </div>
+        {/* <Test y={1} images={[images[0], images[1], images[2]]} />
+        <Test y={2} images={[images[3], images[4], images[5]]} />
+        <Test y={3} images={[images[6], images[7], images[8]]} />
+
+        <Test y={4} images={[images[9], images[10], images[11]]} /> 
+      </div> */}
 
       <div className="h-screen w-full p-6 bg-slate-50 flex flex-col items-center justify-center gap-6">
         <h1 className="text-5xl font-bold text-slate-950">morph</h1>

@@ -34,6 +34,15 @@ const images = [
   "https://d1p14e7crsfwok.cloudfront.net/10.mp4",
   "https://d1p14e7crsfwok.cloudfront.net/11.mp4",
   "https://d1p14e7crsfwok.cloudfront.net/12.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/13.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/14.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/15.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/16.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/17.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/18.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/19.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/20.mp4",
+  "https://d1p14e7crsfwok.cloudfront.net/21.mp4",
 ];
 
 // const images = [
@@ -65,9 +74,9 @@ const ColumnContainer: React.FC = () => {
 
   // Calculate transformations based on scrollYProgress and height
   const y = useTransform(scrollYProgress, [0, 1], [0, height * 1.5]);
-  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 1.8]);
   const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25]);
-  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2]);
+  const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 1.8]);
 
   useEffect(() => {
     const lenis = new Lenis();
@@ -107,18 +116,18 @@ const ColumnContainer: React.FC = () => {
       ref={columnContainer}
       className="bg-slate-950 h-[122vh] md:h-[275vh] relative flex flex-wrap md:flex-nowrap gap-[2vw] p-[2vw] overflow-hidden"
     >
-      <div className="flex">
+      <div className="flex ">
         <Column
           y={y}
           images={[
-            images[0],
+            images[15],
             images[1],
-            images[2],
-            images[5],
+            images[8],
+            images[16],
             images[11],
             images[6],
-            images[7],
-            images[3],
+            images[18],
+            images[14],
           ]}
         />
       </div>
@@ -126,14 +135,14 @@ const ColumnContainer: React.FC = () => {
         <Column
           y={y2}
           images={[
-            images[3],
+            // images[13],
             images[4],
+            images[19],
+            images[9],
+            images[4],
+            images[17],
             images[5],
-            images[9],
-            images[4],
-            images[9],
-            images[10],
-            images[11],
+            images[18],
           ]}
         />
       </div>
@@ -141,14 +150,14 @@ const ColumnContainer: React.FC = () => {
         <Column
           y={y3}
           images={[
+            images[16],
             images[6],
-            images[7],
-            images[3],
+            images[12],
             images[2],
-            images[3],
-            images[3],
-            images[3],
-            images[3],
+            images[13],
+            images[18],
+            images[11],
+            images[16],
           ]}
         />
       </div>
@@ -156,14 +165,14 @@ const ColumnContainer: React.FC = () => {
         <Column
           y={y4}
           images={[
-            images[9],
-            images[10],
+            // images[9],
+            images[17],
             images[11],
-            images[4],
+            images[5],
             images[7],
-            images[3],
+            images[20],
             images[2],
-            images[1],
+            images[11],
           ]}
         />
       </div>

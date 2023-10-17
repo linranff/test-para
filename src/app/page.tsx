@@ -79,11 +79,28 @@ export default function Home() {
   return (
     <main>
       <div className="h-screen scroll-smooth w-full p-6 bg-slate-50 flex flex-col items-center justify-center gap-6">
+        <h1 className="text-5xl font-bold text-slate-950">Morph Studio</h1>
+        <p className="text-lg font-medium text-slate-700 text-center">
+          With our Text-to-Video AI Magic, manifest your creativity through your
+          prompt!
+        </p>
+        <Divider />
+        {/* <Button /> */}
+        <p className="text-sm mt-6 text-slate-400"></p>
+
+        <Link
+          className="flex flex-row text-xl justify-center items-center gap-2 border-2 border-[#000000] rounded-lg px-5 py-3 text-[#fff] hover:bg-[#000]/80 hover:text-white transition-all duration-300 ease-in-out bg-[#000]/90 "
+          href="https://discord.gg/hjd9JvXTU5"
+          target="_blank"
+        >
+          {/* <BsDiscord className="text-3xl" /> */}
+          <div className="min-w-[150px] text-center">Join our Discord</div>
+        </Link>
         <div
           className="flex flex-col items-center justify-center cursor-pointer"
           onClick={smoothScrollToTarget}
         >
-          <h1 className="text-5xl font-bold mb-8">Showcase</h1>
+          <h1 className="text-xl font-semibold mb-8 mt-[200px]">Showcase</h1>
           <a href="#targetSection">
             <svg
               className="w-6 h-6 animate-bounce"
@@ -101,58 +118,35 @@ export default function Home() {
             </svg>
           </a>
         </div>
+      </div>
+      <p ref={targetRef}></p>
 
+      {/* ###### show case videos ###### */}
+      <ColumnContainer />
+      {/* ###### show case videos ###### */}
+
+      <div className="h-screen w-full p-6 bg-slate-50 flex flex-col items-center justify-center gap-6">
         <h1 className="text-5xl font-bold text-slate-950">Morph Studio</h1>
-        <p className="text-lg font-medium text-slate-700">Morph Studio</p>
+        <p className="text-lg font-medium text-slate-700 text-center">
+          With our Text-to-Video AI Magic, manifest your creativity through your
+          prompt!
+        </p>
         <Divider />
         {/* <Button /> */}
         <p className="text-sm mt-6 text-slate-400"></p>
-
         <Link
-          className="flex flex-row text-xl justify-center items-center gap-2 border-2 border-[#7062f2] rounded-lg px-5 py-3 text-[#fff] hover:bg-[#7062f2] hover:text-white transition-all duration-300 ease-in-out bg-[#4952ca]/80 "
+          className="flex flex-row text-xl justify-center items-center gap-2 border-2 border-[#000000] rounded-lg px-5 py-3 text-[#fff] hover:bg-[#000]/80 hover:text-white transition-all duration-300 ease-in-out bg-[#000]/90 "
           href="https://discord.gg/hjd9JvXTU5"
           target="_blank"
         >
           {/* <BsDiscord className="text-3xl" /> */}
           <div className="min-w-[150px] text-center">Join our Discord</div>
         </Link>
-      </div>
-      <p ref={targetRef}></p>
-      <ColumnContainer />
-
-      {/* <div className="bg-slate-950 h-[70vh] md:h-[175vh] relative flex gap-[2vw] p-[2vw] overflow-hidden">
-        <Test
-          y={1}
-          images={[images[0], images[1], images[2], images[5], images[11]]}
-        />
-        <Test
-          y={2}
-          images={[images[3], images[4], images[5], images[9], images[4]]}
-        />
-
-        <Test
-          y={3}
-          images={[images[6], images[7], images[8], images[2], images[3]]}
-        />
-
-        <Test
-          y={4}
-          images={[images[9], images[10], images[11], images[8], images[7]]}
-        />
-        {/* <Test y={1} images={[images[0], images[1], images[2]]} />
-        <Test y={2} images={[images[3], images[4], images[5]]} />
-        <Test y={3} images={[images[6], images[7], images[8]]} />
-
-        <Test y={4} images={[images[9], images[10], images[11]]} /> 
-      </div> */}
-
-      <div className="h-screen w-full p-6 bg-slate-50 flex flex-col items-center justify-center gap-6">
         <div
           className="flex flex-col items-center justify-center cursor-pointer"
           onClick={smoothScrollToTarget}
         >
-          <h1 className="text-5xl font-bold mb-8">Showcase</h1>
-          <a className="transform rotate-180">
+          <a className="transform rotate-180 mt-[200px] mb-8">
             <svg
               className="w-6 h-6 animate-bounce "
               fill="none"
@@ -168,20 +162,8 @@ export default function Home() {
               ></path>
             </svg>
           </a>
+          <h1 className="text-xl font-semibold mb-8]">Showcase</h1>
         </div>
-        <h1 className="text-5xl font-bold text-slate-950">Morph Studio</h1>
-        <p className="text-lg font-medium text-slate-700">Morph Studio</p>
-        <Divider />
-        {/* <Button /> */}
-        <p className="text-sm mt-6 text-slate-400"></p>
-        <Link
-          className="flex flex-row text-xl justify-center items-center gap-2 border-2 border-[#7062f2] rounded-lg px-5 py-3 text-[#fff] hover:bg-[#7062f2] hover:text-white transition-all duration-300 ease-in-out bg-[#4952ca]/80 "
-          href="https://discord.gg/hjd9JvXTU5"
-          target="_blank"
-        >
-          {/* <BsDiscord className="text-3xl" /> */}
-          <div className="min-w-[150px] text-center">Join our Discord</div>
-        </Link>
       </div>
     </main>
   );
